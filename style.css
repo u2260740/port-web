@@ -292,6 +292,27 @@ section {
 }
 
 .details-container {
+  padding: 1rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* Special container for special things */
+.about-special-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-special-container {
+  display: flex;
+}
+
+.special-container {
   padding: 1.5rem;
   flex: 1;
   background: white;
@@ -299,6 +320,25 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+/* On hover glow to look cool */
+.special-container:hover{
+  box-shadow: 0 0 5px 5px #6df274;
+  animation: shadows 4s infinite;
+}
+
+/* Special icons are used in the experience and education section, this is required to stop on hover cursor change */
+.special-icon {
+  cursor: default;
+  height: 2rem;
+}
+
+@keyframes shadows{
+  0%{ box-shadow: 0 0 6px 6px #6df274; }
+  25%{ box-shadow: 0 0 5px 5px #b8f5c4; }
+  50%{ box-shadow: 0 0 6px 6px #6df274; }
+  75%{ box-shadow: 0 0 5px 5px #b8f5c4; }
 }
 
 .section-container {
@@ -316,6 +356,7 @@ section {
 
 #experience {
   position: relative;
+  height: 30rem;
 }
 
 .experience-sub-title {
@@ -329,6 +370,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .article-container {

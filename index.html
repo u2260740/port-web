@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+
+    <!-- NAVIGATION -->
+
+    <!-- Desktop section -->
     <nav id="desktop-nav">
+      <!-- Logo -->
       <div class="logo">G.Reynolds</div>
       <div>
+        <!-- Navigation Links -->
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -20,15 +26,21 @@
         </ul>
       </div>
     </nav>
+    <!-- Hamburger Section -->
     <nav id="hamburger-nav">
+      <!-- Logo -->
       <div class="logo">G.Reynolds</div>
+      <!-- Hamburger menu -->
       <div class="hamburger-menu">
+        <!-- When the hamburger icon is clicked open the menu links -->
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
+        <!-- Menu links -->
         <div class="menu-links">
+          <!-- Closes the menu on click -->
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -36,69 +48,71 @@
         </div>
       </div>
     </nav>
+
+    <!-- PROFILE SECTION -->
+
     <section id="profile">
+      <!-- Profile pic container -->
       <div class="section__pic-container">
-        <img src="./assets/OscarPfp.png" alt="John Doe profile picture" />
+        <img src="./assets/OscarPfp.png" alt= "profile picture" draggable="false" />
       </div>
+      <!-- Text Section -->
       <div class="section__text">
+        <!-- Paragraph -->
         <p class="section__text__p1">Hello, I'm</p>
+        <!-- Header -->
         <h1 class="title">George Reynolds</h1>
-        <p class="section__text__p2"></p>
+        <!-- Paragraph -->
+        <p class="section__text__p2">Aspiring Worker</p>
+        <!-- Button containers & their buttons-->
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
+          <!-- On click open new window containing my resume -->
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
             Download CV
           </button>
+          <!-- On click move to the contact section of the site -->
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
+        <!-- Social networks/logo container -->
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          <!-- Social logos and on click links to the platforms -->
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" draggable="false" onclick="location.href='https://linkedin.com/'"/>
+          <img src="./assets/github.png" alt="My Github profile" class="icon" draggable="false" onclick="location.href='https://github.com/u2260740'"/>
         </div>
       </div>
     </section>
+
+    <!-- ABOUT SECTION -->
+
     <section id="about">
+      <!-- Paragraph -->
       <p class="section__text__p1">Get To Know More</p>
+      <!-- Header -->
       <h1 class="title">About Me</h1>
+      <!-- Section container -->
       <div class="section-container">
+        <!-- About section image container -->
         <div class="section__pic-container">
-          <img
-            src="./assets/about-oscar.webp"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/about-oscar.webp" alt="Profile picture" class="about-pic"/>
         </div>
+        <!-- About section details container -->
         <div class="about-details-container">
+          <!-- Another container -->
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+            <!-- Experience Container -->
+            <div class="special-container">
+              <!-- Experience icon -->
+              <img src="./assets/experience-bottle.webp" alt="Experience icon" draggable="false" class="special-icon"/>
               <h3>Experience</h3>
               <p>5+ years <br />General Programming</p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+
+            <!-- Education Container -->
+            <div class="special-container">
+              <!-- Education icon -->
+              <img src="./assets/education-book.webp" alt="Education icon" draggable="false" class="special-icon"/>
               <h3>Education</h3>
               <p>Student at University of East London</br>A-Level Computer Science</p>
             </div>
@@ -115,12 +129,8 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <!-- Arrow icon which takes the user to the next section -->
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" draggable="false" onclick="location.href='./#experience'"/>
     </section>
 
 <!-- EXPERIENCE SECTION -->
@@ -130,10 +140,10 @@
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
           <div class="details-container">
             <h2 class="experience-sub-title">Programming Languages</h2>
             <div class="article-container">
-
               <!-- 1 -->
               <article>
                 <img
@@ -211,17 +221,16 @@
                   <p>Basic</p>
                 </div>
               </article>
-
             </div>
+
+            
           </div>
+
+          
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <!-- Arrow icon which takes the user to the next section -->
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" draggable="false" onclick="location.href='./#projects'"/>
     </section>
 
     <!-- PROJECTS -->
@@ -306,13 +315,10 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <!-- Arrow icon which takes the user to the next section -->
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" draggable="false" onclick="location.href='./#contact'"/>
     </section>
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
