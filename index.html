@@ -113,18 +113,18 @@
             <div class="special-container">
               <!-- Education icon -->
               <img src="./assets/education-book.webp" alt="Education icon" draggable="false" class="special-icon"/>
-              <h3>Education</h3>
-              <p>Student at University of East London</br>A-Level Computer Science</p>
+              <h3>Relevant Education</h3>
+              <p>Student at University of East London</br>A-Level Computer Science & Maths</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I am currently undergoing my qualification at the University of East London
+              and have been coding avidly for the last 5 years. 
+              During my academic journey, I gained a solid foundation in a multitude of programming languages
+              and learned how to work with and lead a group for various projects.
+              The time I’ve spent programming within education, as well as out of it,
+              has led to a passion for improving my knowledge and skills. 
             </p>
           </div>
         </div>
@@ -236,107 +236,60 @@
     <!-- PROJECTS -->
 
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+      <p class="section__text__p1">Previous</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-                style="width:90%"
-              />
+      <div class="wrapper">
+        <!-- Portfolio container -->
+        <div class="port-container">
+          <!-- Radio style input with c1 default checked item -->
+          <input type="radio" name="slide" id="c1" checked>
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="card-icon">1</div>
+              <div class="card-description">
+                <h4>Unity Game</h4>
+                <p>A 2D sidescroller made in Unity</p>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Unity Game</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+          </label>
+          <input type="radio" name="slide" id="c2">
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="card-icon">2</div>
+              <div class="card-description">
+                <h4>Portfolio Website</h4>
+                <p>You're on it!</p>
+              </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 2"
-                class="project-img"
-              />
+          </label>
+          <input type="radio" name="slide" id="c3">
+          <label for="c3" class="card">
+            <div class="row">
+              <div class="card-icon">3</div>
+              <div class="card-description">
+                <h4>Project Three</h4>
+                <p>Yet to come...</p>
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+          </label>
         </div>
       </div>
       <!-- Arrow icon which takes the user to the next section -->
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" draggable="false" onclick="location.href='./#contact'"/>
     </section>
 
+    <!-- Contact Section -->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <img src="./assets/Paper.webp" alt="Email icon" class="icon contact-icon email-icon" draggable="false"/>
+          <p><a href="mailto:u2260740@uel.ac.uk">u2260740@uel.ac.uk</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" draggable="false"/>
           <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
@@ -346,13 +299,12 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience" id="experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
