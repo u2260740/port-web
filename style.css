@@ -136,11 +136,11 @@ a:hover {
   transform: none;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:nth-child(2) {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.hamburger-icon span:last-child {
   transform: none;
 }
 
@@ -516,7 +516,7 @@ input:checked + label .card-description{
 }
 
 .card[for="c3"]{
-  background-image: url('./assets/project-1.png');
+  background-image: url('./assets/project-3.png');
 }
 
 /* CONTACT */
