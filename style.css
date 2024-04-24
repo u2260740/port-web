@@ -251,6 +251,26 @@ section {
   background: none;
 }
 
+.btn-github{
+  background: white;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  text-justify: center;
+}
+
+.btn-github:hover{
+  border: white 0.1rem solid;;
+}
+
+.btn-demo{
+  background: white;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  text-justify: center;
+}
+
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
@@ -479,19 +499,24 @@ article .icon {
   transform: translateY(30px);
   transition-delay: .3s;
   transition: all .3s ease;
+  background: #223;
+  border-radius: 5px 0 0 0;
 }
 
 /* Controls card lower text */
 .card-description p{
-  color: black;
+  color: white;
   padding-top: 5px;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 /* Controls the header of the cards */
 .card-description h4{
   text-transform: uppercase;
   padding-left: 10px;
+  padding-top: 5px;
+  color: white;
 }
 
 input{
