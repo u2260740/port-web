@@ -164,7 +164,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
 }
 
 .section__pic-container {
@@ -283,12 +282,12 @@ section {
 
 #about {
   position: relative;
+  height: 60vh;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
-  margin-top: 2rem;
 }
 
 .about-details-container {
@@ -319,6 +318,11 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.text-container{
+  text-align: center;
+  font-size: large;
 }
 
 /* Special container for special things */
@@ -376,7 +380,7 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
+  gap: 2rem;
   height: 60%;
 }
 
@@ -384,7 +388,6 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  clip-path: circle(90% 90% at 0 0);
 }
 
 /* EXPERIENCE SECTION */
