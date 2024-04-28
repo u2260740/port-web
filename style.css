@@ -551,6 +551,10 @@ input:checked + label .card-description{
   background-image: url('./assets/project-4.png');
 }
 
+.card[for="c5"]{
+  background-image: url('./assets/project-5.png');
+}
+
 /* CONTACT */
 
 #contact {
