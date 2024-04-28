@@ -45,6 +45,14 @@
     .about-containers {
       margin-top: 0;
     }
+    .wrapper{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -54,7 +62,7 @@
     }
     #profile {
       height: 83vh;
-      margin-bottom: 0;
+      margin-bottom: 5px;
     }
     article {
       font-size: 1rem;
@@ -102,6 +110,29 @@
     }
     .card{
       width: 12vw;
+    }
+    .wrapper{
+      width: 60%;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+    }
+    .card{
+      width: 10vw;
+      border-radius: .75rem;
+      background-size: cover;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 2rem;
+      margin: 0 10px;
+      display: flex;
+      align-items: flex-end;
+      transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    }
+    input:checked+label{
+      width: 60vw;
     }
   }
   
